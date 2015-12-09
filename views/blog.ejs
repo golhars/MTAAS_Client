@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Testify</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/business-casual.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="brand">Testify</div>
+<div class="address-bar">San Jose State University | San Jose, CA 95112</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-ng-app="MtaaS" data-ng-controller="MtaaS">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/index">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/login">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Testify Blogs</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+
+                    <h2>The Forrester Wave: Service Virtualization And Testing Solutions, Q1 2014
+                        <br>
+                        <small>October 13, 2015</small>
+                    </h2>
+                    <p>Organizations are faced with trying to solve the challenge of integration testing in complex architectures. The Forrester Wave does a vendor comparison of how service virtualization and testing (SVT) solutions provide developers and testers with tools to quickly simulate the services of a complex production environment, mainly for automating regression, integration and performance tests.</p>
+                    <a href="http://transform.ca.com/service-virtualization-forrester-wave_US_CAN_460137_lp.html?cid=NA-SEM-APD-AAU-000011-00000829-000000094" class="btn btn-default btn-lg">Read More</a>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+
+                    <h2>HCL MTaaS
+                        <br>
+                        <small>October 13, 2013</small>
+                    </h2>
+                    <p>HCL Management Tools as a Service (MTaaSTM) is an award winning private cloud based enterprise management platform for delivery of IT Management Tools. The key features of MTaaSTM are:</p>
+                    <a href="http://www.hcltech.com/services/cloud-computing/intellectual-properties/mtaas" class="btn btn-default btn-lg">Read More</a>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+
+                    <h2>Learn J Bins
+                        <br>
+                        <small>October 13, 2013</small>
+                    </h2>
+                    <p>Came and learn how to use JS bins for debugging purpose</p>
+                    <a href="https://jsbin.com/?html,output" class="btn btn-default btn-lg">Read More</a>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="#">&larr; Older</a>
+                        </li>
+                        <li class="next"><a href="#">Newer &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Testify</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+
+        var app=angular.module('MtaaS', [])
+        app.controller('MtaaS', ['$scope', '$http', '$window', function( $scope,$http,$window)
+        {
+            $scope.login = function ()
+            {
+                $window.location.href = '/login';
+            }
+
+            $scope.about=function()
+            {
+                $window.location.href='/about';
+            }
+            $scope.blog=function()
+            {
+                $window.location.href='/blog';
+            }
+            $scope.contact=function()
+            {
+                $window.location.href='/contact';
+            }
+        }]);
+
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+
+    </script>
+
+
+</body>
+
+</html>
